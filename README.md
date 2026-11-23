@@ -1,112 +1,78 @@
-AI Pose Detection
+# AI Pose Detection & Workout Tracking System
 
-A real-time human pose estimation system built with MediaPipe and OpenCV that tracks body landmarks via webcam input. The system automatically counts repetitions and evaluates posture to give real-time feedback for exercise form correction.
+A real-time AI-powered human pose detection system built using Python, MediaPipe, and OpenCV. It tracks body landmarks through a webcam, automatically counts workout repetitions, evaluates exercise posture, and provides real-time feedback to help users improve their workout form.
 
-Features
+## Features
 
+- **Real-Time Pose Detection:** Tracks 33 body landmarks using MediaPipe Pose.
+- **Automatic Rep Counting:** Counts exercise repetitions by analyzing joint angles and movement stages.
+- **Posture Evaluation:** Identifies incorrect exercise posture using angle-based conditions.
+- **Live Feedback:** Displays posture correction suggestions directly on the webcam feed.
+- **Joint Angle Calculation:** Analyzes body movements using landmark coordinates.
+- **Webcam Integration:** Captures and processes live video using OpenCV.
 
-Real-time pose tracking — detects and tracks 33 body landmarks using MediaPipe's Pose solution
-Automated repetition counting — tracks joint angles (e.g. elbow, knee) to count exercise reps automatically
-Posture evaluation — analyzes form and flags incorrect posture in real time
-Live feedback — displays rep count and form corrections directly on the webcam feed
+## Tech Stack
 
+- Python
+- MediaPipe
+- OpenCV
+- NumPy
 
-Tech Stack
+## How It Works
 
- AI Pose Detection
+1. Captures live video from the webcam using OpenCV.
+2. Detects body landmarks using MediaPipe Pose.
+3. Extracts landmark coordinates and calculates joint angles.
+4. Uses angle thresholds to identify movement stages.
+5. Automatically counts repetitions based on movement transitions.
+6. Evaluates posture and provides real-time correction feedback.
+7. Displays landmarks, repetition count, movement stage, and posture information on the video feed.
 
-A real-time human pose estimation system built with MediaPipe and OpenCV that tracks body landmarks via webcam input. The system automatically counts repetitions and evaluates posture to give real-time feedback for exercise form correction.
+## Installation & Usage
 
-Features
+Clone the repository:
 
+```bash
+git clone https://github.com/your-username/AI-Pose-Detection.git
+```
 
-Real-time pose tracking — detects and tracks 33 body landmarks using MediaPipe's Pose solution
-Automated repetition counting — tracks joint angles (e.g. elbow, knee) to count exercise reps automatically
-Posture evaluation — analyzes form and flags incorrect posture in real time
-Live feedback — displays rep count and form corrections directly on the webcam feed
+Navigate to the project folder:
 
+```bash
+cd AI-Pose-Detection
+```
 
-Tech Stack
+Install dependencies:
 
+```bash
+pip install opencv-python mediapipe numpy
+```
 
-PythonAI Pose Detection
+Run the application:
 
-A real-time human pose estimation system built with MediaPipe and OpenCV that tracks body landmarks via webcam input. The system automatically counts repetitions and evaluates posture to give real-time feedback for exercise form correction.
+```bash
+python main.py
+```
 
-Features
+Make sure your webcam is connected and accessible.
 
+## Applications
 
-Real-time pose tracking — detects and tracks 33 body landmarks using MediaPipe's Pose solution
-Automated repetition counting — tracks joint angles (e.g. elbow, knee) to count exercise reps automatically
-Posture evaluation — analyzes form and flags incorrect posture in real time
-Live feedback — displays rep count and form corrections directly on the webcam feed
+- Home workout assistance
+- Exercise repetition tracking
+- Posture monitoring
+- Fitness movement analysis
+- Computer vision applications
 
+## Future Improvements
 
-Tech Stack
+- Support for additional exercises
+- Improved posture correction accuracy
+- Voice-based feedback
+- Workout progress tracking
+- User-friendly interface
 
+## Author
 
-AI Pose Detection
-
-A real-time human pose estimation system built with MediaPipe and OpenCV that tracks body landmarks via webcam input. The system automatically counts repetitions and evaluates posture to give real-time feedback for exercise form correction.
-
-Features
-
-
-Real-time pose tracking — detects and tracks 33 body landmarks using MediaPipe's Pose solution
-Automated repetition counting — tracks joint angles (e.g. elbow, knee) to count exercise reps automatically
-Posture evaluation — analyzes form and flags incorrect posture in real time
-Live feedback — displays rep count and form corrections directly on the webcam feed
-
-
-Tech Stack
-
-
-Python
-MediaPipe
-OpenCV
-
-
-How It Works
-
-
-Captures live video from the webcam using OpenCV
-Processes each frame with MediaPipe Pose to extract body landmark coordinates
-Calculates joint angles from landmark positions
-Uses angle thresholds to detect movement phases (e.g. up/down) and increment rep count
-Overlays rep count, stage, and posture feedback on the video feed  Python
-MediaPipe
-OpenCV
-
-
-How It Works
-
-
-Captures live video from the webcam using OpenCV
-Processes each frame with MediaPipe Pose to extract body landmark coordinates
-Calculates joint angles from landmark positions
-Uses angle thresholds to detect movement phases (e.g. up/down) and increment rep count
-Overlays rep count, stage, and posture feedback on the video feed
-MediaPipe
-OpenCV
-
-
-How It Works
-
-
-Captures live video from the webcam using OpenCV
-Processes each frame with MediaPipe Pose to extract body landmark coordinates
-Calculates joint angles from landmark positions
-Uses angle thresholds to detect movement phases (e.g. up/down) and increment rep count
-Overlays rep count, stage, and posture feedback on the video feed Python
-  MediaPipe
-  OpenCV
-
-
-How It Works
-
-
-Captures live video from the webcam using OpenCV
-Processes each frame with MediaPipe Pose to extract body landmark coordinates
-Calculates joint angles from landmark positions
-Uses angle thresholds to detect movement phases (e.g. up/down) and increment rep count
-Overlays rep count, stage, and posture feedback on the video feed
+**Ragul G**  
+Python Developer | AI & Data Science Graduate
